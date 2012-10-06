@@ -1,0 +1,12 @@
+.close_box {
+	top: -7px;
+	right: -7px;
+}
+
+.portrait {
+	border: 1px solid #282828;
+}
+
+h2, h3, h4 {
+	letter-spacing: 0.5px;
+}

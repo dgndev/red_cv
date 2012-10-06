@@ -1,0 +1,707 @@
+/*	BEGIN RESET
+-----------------------------------------------------------*/
+
+html,body,p,div,img,h1,h2,h3,h4,li,ul,ol,dl,dd,dt,form,pagele,td,tr {
+	margin:0px; 
+	padding:0px; 
+	border:0px; 
+	border-collapse:separate; 
+	border-spacing:0px;
+}
+
+* :focus { outline: 0; }
+textarea { resize: none; }	
+
+/*	END RESET
+----------------------------------------------------------*/
+
+@font-face {
+	font-family: 'Bebas';
+	src: url('fonts/BebasNeue-webfont.eot');
+	src: local('¢'), url('fonts/BebasNeue-webfont.woff') format('woff'), url('fonts/BebasNeue-webfont.ttf') format('truetype'), url('fonts/BebasNeue-webfont.svg#webfontAGQ6uv7S') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+	font-size: 11px;
+	font-family: Arial, sans-serif;
+	line-height: 18px;
+	color: #8d8d8d;
+	background-color: #212121;
+}
+
+/* BACKGROUND CLASSES
+----------------------------------------------------------*/
+.grid {
+	background: url(../img/backgrounds/grid.jpg) repeat;
+}
+
+.lines {
+	background: url(../img/backgrounds/lines.png) repeat;
+}
+
+.tiles {
+	background: url(../img/backgrounds/tiles.png) repeat;
+}
+
+.noise {
+	background: url(../img/backgrounds/noise.jpg) repeat;
+}
+
+
+h1 {
+	font-size: 30px;
+	font-family: Bebas, Arial, sans-serif;
+	color: #adadad;
+	text-align: center;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: Bebas, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 22px;
+	color: #c62e2e;
+}
+
+h3 {
+	font-family: Bebas, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #c62e2e;
+}
+
+h4 {
+	font-family: Bebas, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #c62e2e;
+}
+
+h5 {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #8d8d8d;	
+}
+
+h6 {
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	color: #8d8d8d;	
+}
+
+a {
+	color: #c62e2e;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+/*	BEGIN TABLES
+-------------------------------------------------*/
+table { 
+	width:100%; 
+	text-align: center; 
+	border-collapse: collapse;
+}
+
+th   { 
+	color: #303030; 
+	background-color: #c62e2e;
+}
+
+thead ,th ,tfoot {
+	font-weight: normal;
+}
+
+th,td,caption { 
+	padding: 5px 5px 5px 5px; 
+	border: 1px solid #282828;
+}
+
+tr.even td  {
+	background-color: #202020; 
+}
+
+/*	END TABLES
+---------------------------------------------------*/
+
+
+
+/*	BEGIN MISC
+---------------------------------------------------*/
+
+blockquote  {
+	letter-spacing: 0.5px;
+	font-size: 11px;
+	font-style: italic;
+	margin: 20px 40px 20px 40px;
+}
+
+abbr, acronym { 
+	border-bottom: 1px dotted #76705e; 
+}
+
+del {
+	color:#76705e; 
+}
+
+pre,code,tt   { 
+	font-family: 'lucida console', monospace; 
+	color:#76705e; 
+}
+
+ol li {
+	font-size: 11px;
+}
+
+.clear {
+	clear: both;
+}
+/*	END MISC 
+----------------------------------------------------*/
+
+#outer_wrapper {
+	margin: 0 auto;
+	padding-top: 50px;
+	background: url(../img/top-light.png) no-repeat;
+	background-position: center top;
+	width: 759px;
+	position: relative;
+}
+
+#inner_wrapper {
+	margin: 0 auto;
+	width: 476px;
+	background: url(../img/content-bg.png) center repeat-y;
+}
+
+#header {
+	margin: 0 auto;
+	background: url(../img/content-bg-top.png) center top no-repeat;
+	width: 460px;
+	padding: 0 8px;
+}
+
+#header span {
+	color: #c62e2e;
+}
+
+#header h1 {
+	padding-top: 28px;
+}
+
+#profession {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	background-color: #1c1c1c;
+	text-align: center;
+	padding: 10px 0;
+	width: 460px;
+	margin-top: 20px;
+}
+
+
+/*	NAVIGATION
+---------------------------------------------------*/
+
+#nav {
+	padding: 13px 0;
+	text-align: center;
+	background-color: #222222;
+	margin-top: 1px;
+}
+
+#nav ul#navigation {
+	list-style: none;
+}
+
+#nav ul#navigation li {
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 10px;
+	display: inline;
+	margin: 0 8px;
+	text-transform: uppercase;
+}
+
+#nav ul#navigation li a {
+	color: #adadad;
+	text-decoration: none;
+}
+
+#nav ul#navigation li a:hover {
+	color: #c62e2e;
+	text-decoration: none;
+}
+
+#nav ul#navigation li a.selected {
+	color: #c62e2e;
+}
+
+.panel {
+	margin: 0 auto;
+	width: 420px;
+	padding: 20px 28px 20px 28px;
+	clear: both;
+}
+
+.subtitle {
+	font-size: 10px;
+	color: #626262;
+	margin: 4px 0 15px 0;
+	padding-bottom: 5px;
+	line-height: 10px;
+	border-bottom: 1px dashed #282828;
+}
+
+/*	ABOUT
+---------------------------------------------------*/
+
+.portrait {
+	float: left;
+	margin-right: 20px;
+	padding: 5px;
+	border: 1px dashed #282828;
+}
+
+#about h3 {
+	clear: both;
+	padding-top: 20px;
+}
+
+.unordered_list {
+	margin-top: 15px;
+}
+
+.unordered_list li {
+	margin-bottom: 5px;
+	list-style: none;
+	display: block;
+	float: left;
+	background: url(../img/arrow.png) no-repeat 0 6px;
+	width: 185px;
+	padding: 0 10px 0px 13px;
+}
+
+/*  LIST BULLETS CLASSES
+------------------------------------------*/
+
+.arrow li {
+	background: url(../img/bullets/arrow.png) no-repeat 0 6px;
+}
+
+.diamond li {
+	background: url(../img/bullets/diamond.png) no-repeat 0 6px;
+}
+
+.plus li {
+	background: url(../img/bullets/plus.png) no-repeat 0 6px;
+}
+
+.circle li {
+	background: url(../img/bullets/circle.png) no-repeat 0 6px;
+}
+
+.square li {
+	background: url(../img/bullets/square.png) no-repeat 0 6px;
+}
+
+
+/*	WORK
+---------------------------------------------------*/
+
+#portfolio_slider {
+	clear: both;
+	width: 420px;
+	height: 167px;
+	overflow: hidden;	
+}
+
+/*----this class allows the users to see all of the portfolio items when the javascript is disabled----*/
+.slider_no_js {
+	height: auto !important;
+	margin-bottom: 15px;
+}
+/*----end fix---*/
+
+.gallery {
+	list-style: none;
+}
+
+.gallery li {
+	display: inline;
+	float: left;
+	margin-bottom: 10px;
+	list-style-type: none;
+}
+
+.gallery li a {
+	line-height: 0px;
+}
+
+.gallery li img, .project img {
+	border: 1px solid #282828;
+	margin-right: 15px;
+	padding: 4px;
+}
+
+.gallery li img:hover, .project img:hover {
+	border: 1px solid #404040;
+}
+
+.gallery li img.last_in_line {
+	margin-right: 0px;
+}
+
+
+#gallery_nav {
+	margin: 10px 0px;
+	clear: both;
+	list-style: none;
+	text-align: right;
+}
+
+#gallery_nav li {
+	display: inline;
+	margin-left: 10px;
+}
+
+#gallery_nav li a {
+	color: #8d8d8d;
+}
+
+#gallery_nav li a:hover {
+	color: #c62e2e;
+	text-decoration: none;
+}
+
+/*-----this class sets the display of #gallery_nav to none if the javascript is disabled in the browser-----*/
+.gallery_nav_no_js {
+	display: none;
+}
+/*----end fix---*/
+
+/*-----Latest Project slider-----*/
+
+#latest_projects_slider {
+	height: 90px;
+	overflow: hidden;
+}
+
+.project img {
+	float: left;
+}
+
+.project_details {
+	margin-left: -5px;
+	width: 277px;
+	list-style: none;
+	float: left;
+}
+
+.project_details strong {
+	color: #c62e2e;
+	margin-right: 5px;
+	font-weight: normal;
+}
+
+
+/*	SOCIAL
+---------------------------------------------------*/
+ul.social_links {
+	display: inline-block;
+	padding-top: 10px;
+}
+
+.social_links li {
+	background-color: #161616;
+	width: 209px;
+	margin: 0px 1px 1px 0px;
+	float: left;
+	display: inline;	
+	line-height: 16px;
+	padding: 10px 0;
+	cursor: pointer;
+}
+
+.social_links img {
+	float: left;
+	margin-left: 10px;
+	margin-right: 7px;
+}	
+
+.social_links strong {
+	color: #c62e2e;
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.social_links li a {
+	color: #8d8d8d;
+	text-decoration: none;
+}
+
+ul.social_links li.last {
+	margin-right: 0 !important;
+}
+
+
+/*	RESUME
+---------------------------------------------------*/
+
+.topic {
+	width: 140px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+#resume h3 {
+	padding-top: 20px;
+}
+
+.cv {
+	clear: both;
+	list-style: none;
+}
+
+.cv li {
+	border-bottom: 1px dashed #282828;
+	padding: 8px 0;
+}
+
+.skills {
+	display: inline-block;
+	width: 159px;
+	margin: 0px 22px 0px -3px;
+	
+}
+
+.cv li.last_cv {
+	border-bottom: none;
+}
+.cv li:first-child {
+	margin-top: -12px;
+}
+
+.level1, .level2, .level3, .level4, .level5 {
+	text-indent: 99999px;
+	display: inline-block;
+	width: 95px;
+	height: 15px;
+}
+
+/*----- Skill star levels -----*/
+	.level1 {
+		background: url(../img/levels/level.png) no-repeat left top;
+	}
+	.level2 {
+		background: url(../img/levels/level2.png) no-repeat left top;
+	}
+	.level3 {
+		background: url(../img/levels/level3.png) no-repeat left top;
+	}
+	.level4 {
+		background: url(../img/levels/level4.png) no-repeat left top;
+	}
+	.level5 {
+		background: url(../img/levels/level5.png) no-repeat left top;
+	}
+
+.down_cv {
+	margin-top: 12px;
+	padding: 7px 13px;
+	text-align: center;
+	border: 1px solid #282828;
+	display: inline-block;
+	color: #707070;
+}
+
+.down_cv:active {
+	margin-top: 13px;
+}
+
+.down_cv:hover {
+	color: #c62e2e;
+	border: 1px dashed #282828;
+	text-decoration: none;
+}
+
+
+/*	CONTACT
+---------------------------------------------------*/
+#info {
+	float: left;
+	width: 170px;
+	margin: 10px 0 0 25px;
+}	
+
+#info {
+	list-style: none;
+	margin: 20px 0 15px 0;
+}
+
+#info li {
+	margin-bottom: 10px;
+}
+
+#info img {
+	padding-right: 15px;
+	vertical-align: middle;
+	margin-bottom: 8px;
+	float: left;
+}
+
+#info a {
+	color: #8d8d8d;
+}
+
+#info a:hover {
+	color: #c62e2e;
+}
+
+form {	
+	margin: 20px 30px 0px 0px;
+	width: 220px;
+	float: left;
+	padding-bottom: 20px;
+}
+		
+.textbox, #message {
+	color: #505050;
+	width: 170px;
+	margin-bottom: 8px;
+	padding: 7px;
+	background-color: #121212;
+	border: 1px solid #282828;
+	font-family: Arial, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	font-style: italic;
+}
+
+#message {
+	height: 65px;
+	width: 200px;
+}	
+
+.form_btn {
+	padding: 7px 13px;
+	color: #707070;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-size: 11px;	
+	background-color: #121212;
+	margin-right: 5px;
+	border: 1px solid #282828;
+	text-align: center;
+}
+
+.form_btn:hover {
+	color: #c62e2e;
+	border: 1px dashed #282828;
+}
+
+.form_btn:active {
+	margin-top: 1px;
+}
+
+#message_outcome {
+	font-size: 10px;
+	width: 160px;
+	padding: 5px 0px 0 0px;
+	display: none;	
+}
+
+
+/*	FOOTER
+---------------------------------------------------*/
+
+#footer {
+	background: url(../img/bottom-twitter-bg.png) bottom center no-repeat;
+	margin: 0 auto;
+	width: 460px;
+	padding: 0 8px;
+}
+
+.separator {
+	margin: 0px 48px -6px 48px;
+}
+
+#twitter_feed {
+	padding: 0px 20px 18px 20px;
+}
+
+#twitter_feed ul li {
+	list-style: none;
+	height: 36px;
+	padding-left: 45px;
+	background: url(../img/twitter-icon.png) no-repeat 0 8px;
+}
+
+.tweet_list {
+	border-top: 1px dashed #282828;
+	padding-top: 10px;
+	overflow: hidden;
+}
+
+#copyright {
+	font-size: 10px;
+	color: #656565;
+	padding: 8px 0px 40px 0px; 
+	text-align: center;
+	
+}
+
+
+
+/*	POPUP BOXES STYLES
+---------------------------------------------------*/
+
+.boxes, .inner_box {
+	background-color: #202020;
+}
+
+.boxes {
+	width: 418px;
+	padding: 8px;
+	z-index: 100;
+	position: absolute;
+	top: 300px;
+	left: 162px;
+	display: none;
+}
+
+.inner_box {
+	padding: 15px;
+	border: 1px dashed #303030;
+	position: relative;
+}
+
+.boxes h3{
+	padding-bottom: 15px;
+}
+
+.close_box {
+	width: 23px;
+	height: 23px;
+	text-indent: -99999px;
+	position: absolute;
+	background: url(../img/close.png) bottom center no-repeat;
+	top: -13px;
+	right: -13px;
+}
+
+.close_box:hover {
+	background: url(../img/close.png) top center no-repeat;
+}
+
